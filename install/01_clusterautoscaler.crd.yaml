@@ -56,6 +56,9 @@ spec:
                 items:
                   type: string
                 type: array
+              expander:
+                description: Expander for cluster autoscaler
+                type: string
               ignoreDaemonsetsUtilization:
                 description: Enables/Disables `--ignore-daemonsets-utilization` CA
                   feature flag. Should CA ignore DaemonSet pods when calculating resource

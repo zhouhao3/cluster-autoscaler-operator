@@ -16,6 +16,9 @@ type ClusterAutoscalerSpec struct {
 	// Configuration of scale down operation
 	ScaleDown *ScaleDownConfig `json:"scaleDown,omitempty"`
 
+	// Expander for cluster autoscaler
+	Expander string `json:"expander,omitempty"`
+
 	// Gives pods graceful termination time before scaling down
 	MaxPodGracePeriod *int32 `json:"maxPodGracePeriod,omitempty"`
 
